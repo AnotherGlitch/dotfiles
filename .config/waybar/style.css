@@ -1,0 +1,105 @@
+@define-color bgcolor rgba(42, 36, 56, 1);
+@define-color fgcolor rgba(142, 5, 194, 1);
+@define-color txtcolor rgba(155, 150, 155, 1);
+@define-color wsfocus rgba(241, 0, 134, 1);
+
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+window#waybar {
+	font-family: White Rabbit, ttf-font-awesome;
+	color: @txtcolor;
+	font-size: 20px;
+}
+
+window#waybar.top {
+	background-image: url("/home/glitch/.config/waybar/body-beam.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: auto;
+}
+
+#custom-left-midcap {
+	background-image: url("/home/glitch/.config/waybar/left-midcap.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#custom-right-midcap {
+	background-image: url("/home/glitch/.config/waybar/right-midcap.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#custom-left-cap {
+	background-image: url("/home/glitch/.config/waybar/left-barcap.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#custom-right-cap {
+	background-image: url("/home/glitch/.config/waybar/right-barcap.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#workspaces,
+#clock.1,
+#clock.2,
+#clock.3,
+#backlight,
+#pulseaudio,
+#battery,
+#idle_inhibitor,
+#network,
+#tray {
+	background-image: url("/home/glitch/.config/waybar/body-bar.png");
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: contain;
+	color: @txtcolor;
+	font-size: 20px;
+}
+#idle_inhibitor.activated {
+	color: @fgcolor;
+}
+#workspaces button {
+	padding: 0 10px;
+	color: @txtcolor;
+}
+#workspaces button.focused {
+	color: @fgcolor;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #1a1a1a;
+	border: #1a1a1a;
+	padding: 0 5px;
+}
+
+#clock,
+#backlight,
+#pulseaudio,
+#battery,
+#idle_inhibitor,
+#network {
+	padding: 0 15px;
+}
