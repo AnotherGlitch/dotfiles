@@ -1,0 +1,33 @@
+window {
+   margin: 10px;
+   background-color: rgba(42, 36, 56, 1);
+}
+
+#input {
+   font-family: White Rabbit;
+   margin: 10px;
+   border: 2px solid rgb(155, 150, 155);
+   background-color: rgba(42, 36, 56, 1);
+}
+
+#outer-box {
+   margin: 5px;
+   background-color: rgba(42, 36, 56, 1);
+}
+
+#scroll {
+   font-family: White Rabbit;
+   font-size: 26px;
+   color: rgb(155, 150, 155);
+   margin: 10px;
+   border: 2px solid rgb(155, 150, 155);
+   background-color: rgba(42, 36, 56, 1);
+}
+
+#entry:selected{
+   background-color: rgba(25, 25, 25, 1);
+}
+
+#text:selected{
+   color: rgb(142, 5, 194);
+}
